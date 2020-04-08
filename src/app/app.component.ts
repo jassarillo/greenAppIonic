@@ -24,24 +24,24 @@ export class AppComponent implements OnInit {
     },
     {
       title: 'Eventos',
-      url: '/folder/events',
+      url: '/folder/eventos',
       icon: 'heart'
     },
     {
       title: 'Comentarios',
-      url: '/folder/comments',
+      url: '/folder/comentarios',
       icon: 'archive'
     },
     {
-      title: 'Trash',
-      url: '/folder/Trash',
-      icon: 'trash'
-    },
+      title: 'Ingresar',
+      url: '/login',
+      icon: 'enter'
+    }/*,
     {
       title: 'Spam',
       url: '/folder/Spam',
       icon: 'warning'
-    }
+    }*/
   ];
   //public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
 
