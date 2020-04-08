@@ -22,6 +22,14 @@ const routes: Routes = [
   {
     path: 'adduser',
     loadChildren: () => import('./adduser/adduser.module').then( m => m.AdduserPageModule)
+  },
+  {
+    path: 'eventos',
+    loadChildren: () => import('./eventos/eventos.module').then( m => m.EventosPageModule)
+  },
+  {
+    path: 'comentarios',
+    loadChildren: () => import('./comentarios/comentarios.module').then( m => m.ComentariosPageModule)
   }
 ];
 
