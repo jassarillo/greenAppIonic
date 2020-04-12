@@ -29,19 +29,19 @@ export class AppComponent implements OnInit {
     },
     {
       title: 'Comentarios',
-      url: '/folder/comentarios',
+      url: '/comentarios',
       icon: 'archive'
     },
     {
       title: 'Ingresar',
       url: '/login',
       icon: 'enter'
-    }/*,
+    },
     {
-      title: 'Spam',
-      url: '/folder/Spam',
-      icon: 'warning'
-    }*/
+      title: 'Chat',
+      url: '/chat-ejem',
+      icon: 'chatbubbles'
+    }
   ];
   //public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
 

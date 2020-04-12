@@ -30,7 +30,11 @@ const routes: Routes = [
   {
     path: 'comentarios',
     loadChildren: () => import('./comentarios/comentarios.module').then( m => m.ComentariosPageModule)
+  },  {
+    path: 'chat-ejem',
+    loadChildren: () => import('./chat-ejem/chat-ejem.module').then( m => m.ChatEjemPageModule)
   }
+
 ];
 
 @NgModule({
