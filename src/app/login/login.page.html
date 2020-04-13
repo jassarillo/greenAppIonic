@@ -1,14 +1,21 @@
 <ion-header>
 
   <ion-toolbar color="success">
+    <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+          <ion-icon  name="person" slot="start"></ion-icon>
+    </ion-buttons>  
     <ion-title>Ingresar</ion-title>
+
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
     <ion-item>
-  <ion-label position="floating">Alias/correo</ion-label>
+  <ion-label position="floating">Usuario</ion-label>
   <ion-input></ion-input>
 </ion-item>
     <ion-item>
@@ -19,4 +26,8 @@
     
     <ion-button expand="block" color="success">Guardar</ion-button>
 
+  <ion-card>
+    <img src="assets/img/logo1.png" />
+    
+  </ion-card>
 </ion-content>

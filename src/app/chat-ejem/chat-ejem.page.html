@@ -1,5 +1,11 @@
 <ion-header >
   <ion-toolbar color="success">
+       <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons color="success" slot="end">
+      <ion-button [routerLink]="['/datos-usuario']"><ion-icon name="person"></ion-icon></ion-button>
+    </ion-buttons>  
     <ion-title >chat_ejem</ion-title>
   </ion-toolbar>
 </ion-header>

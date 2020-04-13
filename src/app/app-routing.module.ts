@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'folder/Inbox',
+    redirectTo: 'inicio',
     pathMatch: 'full'
   },
   {
@@ -30,10 +30,20 @@ const routes: Routes = [
   {
     path: 'comentarios',
     loadChildren: () => import('./comentarios/comentarios.module').then( m => m.ComentariosPageModule)
-  },  {
+  },
+  {
     path: 'chat-ejem',
     loadChildren: () => import('./chat-ejem/chat-ejem.module').then( m => m.ChatEjemPageModule)
+  },
+  {
+    path: 'inicio',
+    loadChildren: () => import('./inicio/inicio.module').then( m => m.InicioPageModule)
+  },  {
+    path: 'datos-usuario',
+    loadChildren: () => import('./datos-usuario/datos-usuario.module').then( m => m.DatosUsuarioPageModule)
   }
+
+
 
 ];
 

@@ -1,6 +1,18 @@
 <ion-header>
   <ion-toolbar color="success">
-    <ion-title><ion-icon name="person-add-outline"></ion-icon> Agregar Usuario </ion-title>
+    <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+    <ion-buttons color="success" slot="end">
+      <ion-button [routerLink]="['/datos-usuario']"><ion-icon name="person"></ion-icon></ion-button>
+    </ion-buttons>  
+
+
+<!---    <ion-buttons slot="end">
+          <ion-icon  name="person" slot="start"></ion-icon>
+    </ion-buttons>-->
+    <ion-title><ion-icon name="person-add-outline"></ion-icon> Registro </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -14,15 +26,21 @@
   <ion-label color="success" position="floating">Alias</ion-label>
   <ion-input></ion-input>
 </ion-item>
-    <ion-item>
+<ion-item>
   <ion-label color="success" position="floating">Correo </ion-label>
   <ion-input></ion-input>
 </ion-item>
-    <ion-item>
+<ion-item>
   <ion-label color="success" position="floating">Confimación de Correo </ion-label>
   <ion-input></ion-input>
 </ion-item>
-    
+<ion-item>
+  <ion-label color="success" position="floating">Password </ion-label>
+  <ion-input></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label color="success" position="floating">Confimación Password </ion-label>
+  <ion-input></ion-input>
+</ion-item>
     <ion-button expand="block" color="success">Guardar</ion-button>
-
 </ion-content>

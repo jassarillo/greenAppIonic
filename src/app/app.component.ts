@@ -12,11 +12,11 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 export class AppComponent implements OnInit {
   public selectedIndex = 0;
   public appPages = [
-    {
+    /*{
       title: 'Crear Usuario',
       url: '/adduser',
       icon: 'person-add'
-    },
+    },*/
     {
       title: 'Productos',
       url: '/products',
@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
       url: '/eventos',
       icon: 'heart'
     },
-    {
+    /*{
       title: 'Comentarios',
       url: '/comentarios',
       icon: 'archive'
@@ -36,7 +36,7 @@ export class AppComponent implements OnInit {
       title: 'Ingresar',
       url: '/login',
       icon: 'enter'
-    },
+    },*/
     {
       title: 'Chat',
       url: '/chat-ejem',
