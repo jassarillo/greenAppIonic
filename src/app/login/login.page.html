@@ -15,19 +15,28 @@
 <ion-content>
 
     <ion-item>
-  <ion-label position="floating">Usuario</ion-label>
-  <ion-input></ion-input>
+  
+  <ion-input placeholder="Usuaurio"></ion-input>
 </ion-item>
     <ion-item>
-  <ion-label position="floating">Correo </ion-label>
-  <ion-input></ion-input>
+
+  <ion-input type="password" placeholder="Contraseña"></ion-input>
 </ion-item>
 
     
-    <ion-button expand="block" color="success">Guardar</ion-button>
+    <ion-button expand="block" color="success">Ingresar</ion-button>
 
   <ion-card>
     <img src="assets/img/logo1.png" />
-    
   </ion-card>
+  <ion-toolbar >
+    <ion-buttons slot="start">
+      <ion-button [routerLink]="['/login']">Ingresar</ion-button>
+    </ion-buttons>
+    <ion-buttons color="success" slot="end">
+      <ion-button [routerLink]="['/adduser']">Registrarse</ion-button>
+    </ion-buttons>  
+   
+
+  </ion-toolbar>
 </ion-content>
