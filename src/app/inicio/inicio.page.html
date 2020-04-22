@@ -5,23 +5,20 @@
 
   </ion-toolbar>
 </ion-header>
-
+<br>
+<br>
+<br>
+ <img src="assets/img/logo1.png" />  
 <ion-content>
-
-  
-
-  <ion-card>
-    <img src="assets/img/logo1.png" />
-    <ion-toolbar >
-      <ion-buttons slot="start">
-        <ion-button [routerLink]="['/login']">Ingresar</ion-button>
-      </ion-buttons>
-      <ion-buttons color="success" slot="end">
-        <ion-button [routerLink]="['/adduser']">Registrarse</ion-button>
-      </ion-buttons>  
-     
-  
-    </ion-toolbar>
-  </ion-card>
   
 </ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="success" [routerLink]="['/login']">Ingresar</ion-button>
+    </ion-buttons>
+    <ion-buttons color="success" slot="end">
+      <ion-button color="success" [routerLink]="['/adduser']">Registrarse</ion-button>
+    </ion-buttons>  
+  </ion-toolbar>
+</ion-footer>

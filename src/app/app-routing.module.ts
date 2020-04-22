@@ -41,6 +41,14 @@ const routes: Routes = [
   },  {
     path: 'datos-usuario',
     loadChildren: () => import('./datos-usuario/datos-usuario.module').then( m => m.DatosUsuarioPageModule)
+  },
+  {
+    path: 'cart',
+    loadChildren: () => import('./cart/cart.module').then( m => m.CartPageModule)
+  },
+  {
+    path: 'detalle-evento',
+    loadChildren: () => import('./detalle-evento/detalle-evento.module').then( m => m.DetalleEventoPageModule)
   }
 
 

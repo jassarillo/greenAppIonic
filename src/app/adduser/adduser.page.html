@@ -22,8 +22,24 @@
   <ion-label color="success" position="floating">Nombre</ion-label>
   <ion-input></ion-input>
 </ion-item>
-    <ion-item>
+<ion-item>
+  <ion-label color="success" position="floating">Dirección</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label color="success" position="floating">Facebook</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label color="success" position="floating">Instagram</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+<ion-item>
   <ion-label color="success" position="floating">Alias</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label color="success" position="floating">Fecha de Nacimiento</ion-label>
   <ion-input></ion-input>
 </ion-item>
 <ion-item>
@@ -42,13 +58,17 @@
   <ion-label color="success" position="floating">Confimación Password </ion-label>
   <ion-input type="password" ></ion-input>
 </ion-item>
+<ion-item>
+  <ion-label color="success" position="floating">Foto IFE </ion-label>
+  <ion-input type="password" ></ion-input>
+</ion-item>
     <ion-button expand="block" color="success">Guardar</ion-button>
     <ion-toolbar >
       <ion-buttons slot="start">
-        <ion-button [routerLink]="['/login']">Ingresar</ion-button>
+        <ion-button color="success" [routerLink]="['/login']">Ingresar</ion-button>
       </ion-buttons>
       <ion-buttons color="success" slot="end">
-        <ion-button [routerLink]="['/adduser']">Registrarse</ion-button>
+        <ion-button color="success" [routerLink]="['/adduser']">Registrarse</ion-button>
       </ion-buttons>  
      
   

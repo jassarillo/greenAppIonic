@@ -1,0 +1,46 @@
+
+
+
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+    <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons color="success" slot="end">
+      <ion-button [routerLink]="['/cart']">
+        <ion-icon name="cart"></ion-icon>
+      </ion-button>
+      <ion-button [routerLink]="['/datos-usuario']">
+        <ion-icon name="person"></ion-icon>
+      </ion-button>
+    </ion-buttons>  
+    <ion-title>Detale Evento</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+  <ion-slides>
+    <ion-slide><img src="https://hot-pain.de/wp-content/uploads/keimen.jpg" /></ion-slide>
+    <ion-slide><img src="https://elpolitico.com/wp-content/uploads/2020/02/marihuana-medicina-1.jpg" /></ion-slide>
+    <ion-slide><img src="https://hot-pain.de/wp-content/uploads/keimen.jpg" /></ion-slide>
+  </ion-slides>
+
+
+  <ion-item>
+    <ion-input>Cultivo</ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-input type="url">30-04-2020</ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-input type="email">Como preparar la tierra fertil para tu cultivo casero...</ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-input type="tel">Dr. Vertiz numero 45 lt 56 col Doctores</ion-input>
+  </ion-item>
+</ion-content>

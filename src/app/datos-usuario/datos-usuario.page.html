@@ -4,18 +4,21 @@
           <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-buttons color="success" slot="end">
-      <ion-button [routerLink]="['/datos-usuario']"><ion-icon name="person"></ion-icon></ion-button>
+      <ion-button [routerLink]="['/cart']">
+        <ion-icon name="cart"></ion-icon>
+        
+      </ion-button>
+      <ion-button [routerLink]="['/datos-usuario']">
+
+        <ion-icon name="person"></ion-icon>
+      </ion-button>
     </ion-buttons>  
     <ion-title>Perfil Usuario</ion-title>
-
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
-  
-
-  
   <ion-item>
     <ion-avatar slot="start">
       <img src="https://i.pinimg.com/originals/d1/1a/45/d11a452f5ce6ab534e083cdc11e8035e.png">
@@ -29,8 +32,6 @@
       <ion-select-option value="m">Masculino</ion-select-option>
     </ion-select>
   </ion-item>
-
-
 
 
 <ion-item>
