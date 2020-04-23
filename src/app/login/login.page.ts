@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LoginService } from './../login.service';
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
@@ -7,18 +9,21 @@ import { LoginService } from './../login.service';
 })
 export class LoginPage implements OnInit {
 
-  //txt: any;
-  public thedata: any;
-  constructor(public loginService: LoginService ) { 
+  username: string;
+  password: string;
 
-    this.loginService.loginService()
-    .then(data => {
-      this.thedata = data;
-      console.log(this.thedata);
-    });
-  }
+  constructor(
+    private router: Router,
+    //private postPvdr: PostProvider,
+    public loginService: LoginService
+  ){}
 
-  ngOnInit() {
+  /*login(email:string, password:string){
+    //this.loginService
+  }*/
+  
+  processLogin(){
+
   }
 
 }
