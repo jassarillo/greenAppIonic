@@ -20,55 +20,41 @@
 </ion-header>
 
 <ion-content>
-  
+
+
    
+
+
+  
 <!-- Default Searchbar -->
 <ion-searchbar></ion-searchbar>
     
-    
-    <ion-card >
-    <img src="https://blog.analitek.com/hubfs/bigstock-Chemistry-Cannabis-Cbd-Cannab-275971441.jpg">
-    <ion-card-header>
-        <div class="btn-toolbar" role="toolbar">
-          <div class="btn-group">
-            <ion-icon  name="heart" ></ion-icon>
-                <ion-icon   ></ion-icon>
-            <ion-icon  name="send" ></ion-icon>
-                <ion-icon   ></ion-icon>
-            <ion-icon  name="chatbubbles" ></ion-icon>
-                <ion-icon   ></ion-icon>
-              <ion-icon  name="star" ></ion-icon>
-            
-          </div>
-        </div>    
-        <ion-card-title color="success">La mejor composicion quimica</ion-card-title>
-        <p>Como la mayoría de los metabolitos secundarios farmacológicamente activos de las plantas, se cree...</p>
-    </ion-card-header>
-  
-</ion-card>
-    
-        
-    <ion-card >
-    <img src="https://www.iwannagrowshop.com/blog/wp-content/uploads/2017/12/brownie-de-maria-1.jpg">
-    <ion-card-header>
-        <div class="btn-toolbar" role="toolbar">
-          <div class="btn-group">
-            <ion-icon  name="heart" ></ion-icon>
-                <ion-icon   ></ion-icon>
-            <ion-icon  name="send" ></ion-icon>
-                <ion-icon   ></ion-icon>
-            <ion-icon  name="chatbubbles" ></ion-icon>
-                <ion-icon   ></ion-icon>
-              <ion-icon  name="star" ></ion-icon>
-            
-          </div>
-        </div>    
-        <ion-card-title color="success">Delicia </ion-card-title>
-        <p>Como la mayoría de los metabolitos secundarios farmacológicamente activos de las plantas, se cree...</p>
-    </ion-card-header>
-  
-</ion-card>
 
+
+<ion-list>
+  <ion-item *ngFor="let item of lista ">
+    
+    <ion-card >
+      <img src="https://capa75.com.mx/images/img_products/product_{{item.id}}.jpg">
+      <ion-card-header>
+          <div class="btn-toolbar" role="toolbar">
+            <div class="btn-group">
+              <ion-icon  name="heart" ></ion-icon>
+                  <ion-icon   ></ion-icon>
+              <ion-icon  name="send" ></ion-icon>
+                  <ion-icon   ></ion-icon>
+              <ion-icon  name="chatbubbles" ></ion-icon>
+                  <ion-icon   ></ion-icon>
+                <ion-icon  name="star" ></ion-icon>
+            </div>
+          </div>    
+          <ion-card-title color="success">{{ item.titulo }}</ion-card-title>
+          <p>{{ item.descripcion }}</p>
+      </ion-card-header>
+    
+  </ion-card>
+  </ion-item>
+</ion-list>
 
     <!-- card -->
     

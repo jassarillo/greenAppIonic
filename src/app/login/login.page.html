@@ -20,8 +20,8 @@
 <ion-item>
   <ion-input type="password" color="success" [(ngModel)]="password" placeholder="Contraseña"></ion-input>
 </ion-item>  
-    <ion-button expand="block" click="processLogin()" color="success">Ingresar-></ion-button>
-    <p> </p>
+    <ion-button expand="block" (click)="onSubmitLogin()" color="success">Ingresar-></ion-button>
+   thedata <h3>{{ username }}</h3>
 </ion-content>
 
 <ion-footer>
