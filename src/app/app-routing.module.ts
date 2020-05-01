@@ -49,6 +49,10 @@ const routes: Routes = [
   {
     path: 'detalle-evento',
     loadChildren: () => import('./detalle-evento/detalle-evento.module').then( m => m.DetalleEventoPageModule)
+  },
+  {
+    path: 'favoritos',
+    loadChildren: () => import('./favoritos/favoritos.module').then( m => m.FavoritosPageModule)
   }
 
 

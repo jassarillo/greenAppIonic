@@ -21,4 +21,27 @@ export class ProductosService {
         });
     });
   }
+
+  saveFavorites(idProduct:string, idUser:string) {
+    return new Promise(resolve => {
+        this.http.get('https://capa75.com.mx/dispensario.php/api/saveFavorits/'+idProduct+'/1').subscribe(data => {
+           resolve(data);
+           //console.log(data);
+           
+        }, err =>{
+
+        });
+    });
+  }
+  getFavorites() {
+    return new Promise(resolve => {
+        this.http.get('https://capa75.com.mx/dispensario.php/api/getFavorits').subscribe(data => {
+           resolve(data);
+           //console.log(data);
+           
+        }, err =>{
+
+        });
+    });
+  }
 }

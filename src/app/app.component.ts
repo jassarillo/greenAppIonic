@@ -25,14 +25,14 @@ export class AppComponent implements OnInit {
     {
       title: 'Eventos',
       url: '/eventos',
-      icon: 'heart'
-    },
-    /*{
-      title: 'Comentarios',
-      url: '/comentarios',
-      icon: 'archive'
+      icon: 'calendar'
     },
     {
+      title: 'Favoritos',
+      url: '/favoritos',
+      icon: 'star'
+    },
+    /*{
       title: 'Ingresar',
       url: '/login',
       icon: 'enter'

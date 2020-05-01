@@ -1,0 +1,90 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons color="success" slot="end">
+      <ion-button [routerLink]="['/cart']">
+        <ion-icon name="cart"></ion-icon>
+  
+      </ion-button>
+      <ion-button [routerLink]="['/datos-usuario']">
+
+        <ion-icon name="person"></ion-icon>
+      </ion-button>
+    </ion-buttons>  
+    <ion-title>Favoritos</ion-title>
+
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+  <!--<ion-list>
+    <ion-item *ngFor="let item of lista ">
+      
+      <ion-card >
+        <img src="https://capa75.com.mx/images/img_products/product_{{item.id}}.jpg">
+        <ion-card-header>
+  
+          <div class="btn-toolbar" role="toolbar">
+          <ion-buttons color="success">
+            <ion-button (click)="onSubmitMyHeart(item.id)">
+              <ion-icon id="heart_{{item.id}}" name="heart"></ion-icon>
+            </ion-button>
+  
+            <ion-button [routerLink]="['/datos-usuario']">
+              <ion-icon name="send"></ion-icon>
+            </ion-button>
+  
+            <ion-button [routerLink]="['/datos-usuario']">
+              <ion-icon name="chatbubbles"></ion-icon>
+            </ion-button>
+  
+            <ion-button [routerLink]="['/datos-usuario']">
+              <ion-icon name="star"></ion-icon>
+            </ion-button>
+          </ion-buttons>  
+          </div> 
+            <ion-card-title color="success">{{ item.titulo }}</ion-card-title>
+            <p>{{ item.descripcion }}</p>
+        </ion-card-header>
+      
+    </ion-card>
+    </ion-item>
+  </ion-list>-->
+
+
+  <ion-list>
+    <ion-item *ngFor="let item of lista ">
+  <ion-card>
+    <ion-grid>
+     <ion-row>
+      <ion-col>
+    <img src="https://capa75.com.mx/images/img_products/product_{{item.id_product}}.jpg">
+    </ion-col>
+    <ion-col>
+    <ion-item>
+      <!--<ion-avatar item-start> <img src="https://material.angular.io/assets/img/examples/shiba1.jpg"> </ion-avatar>-->
+      <h2>{{ item.titulo }}</h2>
+    </ion-item> 
+    <ion-card-content>
+      <p>{{ item.descripcion }}</p>
+      <!--<p>$450.00</p>-->
+      <p>      
+        <ion-button color="success" [routerLink]="['/datos-usuario']">
+        <ion-icon>Comprar</ion-icon>
+      </ion-button>
+    </p>
+    </ion-card-content>
+    </ion-col>
+     </ion-row>
+    </ion-grid>
+  
+  </ion-card>
+</ion-item>
+</ion-list>
+
+
+
+</ion-content>

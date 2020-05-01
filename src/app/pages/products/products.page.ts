@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductosService } from './../../servicios/productos.service';
+import { ProductosService } from './../../servicios/productos.service'; 
 import { Router } from "@angular/router";
 @Component({
   selector: 'app-products',
@@ -10,7 +10,7 @@ export class ProductsPage implements OnInit {
   
    lista: any[0];
   
-  constructor(public productosService: ProductosService, public router: Router ) {
+  constructor(public productosService: ProductosService, public saveFavorites : ProductosService ,public router: Router ) {
     this.leerProductos();
     /*.then(data => {
     this.lista = data;
@@ -26,6 +26,28 @@ export class ProductsPage implements OnInit {
       });
     
    }
+  //idProduct: string;
+  idUser: string;
+   onSubmitMyHeart(id:string)
+  {
+    //console.log("estas en el HEART event: " + id);
+    document.getElementById('heart_'+id).setAttribute('color','danger');
+    //color="danger"
+
+    this.saveFavorites.saveFavorites(id, this.idUser)
+    .then(data => {
+
+      if (data > 1) {
+        alert("agregado a favoritos!");
+    } else {
+       alert("Error");
+    }
+      
+      //this.thedata = data;
+
+      //console.log(this.thedata);
+    })
+  }
   ngOnInit() {
    
   }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EventosService } from './../servicios/eventos.service';
 
 @Component({
   selector: 'app-eventos',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class EventosPage implements OnInit {
+  lista: any[0];
  public selectedIndex = 0;
   public appPages = [
     {
@@ -40,8 +42,18 @@ export class EventosPage implements OnInit {
       icon: 'chatbubbles'
     }
   ];
-  constructor() { }
-
+  constructor(public eventosService: EventosService) { 
+    this.leerEventos();
+  }
+  leerEventos()
+  {
+   this.eventosService.getEventosService().then(
+     data =>{ 
+      this.lista = data;
+      console.log(this.lista);
+     });
+   
+  }
   ngOnInit() {
   }
 
