@@ -1,45 +1,86 @@
 <ion-header>
   <ion-toolbar color="success">
-    <ion-buttons slot="start">
+    <!--<ion-buttons slot="start">
           <ion-menu-button></ion-menu-button>
     </ion-buttons>
 
     <ion-buttons color="success" slot="end">
       <ion-button [routerLink]="['/datos-usuario']"><ion-icon name="person"></ion-icon></ion-button>
-    </ion-buttons>  
+    </ion-buttons>  -->
 
 
-<!---    <ion-buttons slot="end">
-          <ion-icon  name="person" slot="start"></ion-icon>
-    </ion-buttons>-->
     <ion-title><ion-icon name="person-add-outline"></ion-icon> Registro </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-    
-<ion-item>
-  <ion-label color="success"  position="floating">Username</ion-label>
-  <ion-input [(ngModel)]="username"></ion-input>
-</ion-item>
 
-<ion-item>
-  <ion-label color="success"  position="floating">Password </ion-label>
-  <ion-input type="password" [(ngModel)]="password" ></ion-input>
-</ion-item>
-<ion-item>
-  <ion-label color="success" position="floating">Confimación Password </ion-label>
-  <ion-input type="password" [(ngModel)]="confirm_password"></ion-input>
-</ion-item>
-    <ion-button expand="block" (click)="formRegister()" color="success">Guardar</ion-button>
-    <ion-toolbar >
-      <ion-buttons slot="start">
-        <ion-button color="success" [routerLink]="['/login']">Ingresar</ion-button>
-      </ion-buttons>
-      <ion-buttons color="success" slot="end">
-        <ion-button color="success" [routerLink]="['/adduser']">Registrarse</ion-button>
-      </ion-buttons>  
-     
+
+  <form (ngSubmit)="logForm()">
+    
+<!--
+  <ion-item>
+    <ion-avatar slot="start">
+      <img src="https://i.pinimg.com/originals/d1/1a/45/d11a452f5ce6ab534e083cdc11e8035e.png">
+    </ion-avatar>
+    <ion-label>Juan Pérez</ion-label>
+  </ion-item>
+-->
+
+    <ion-item>
+      <ion-input color="success" [(ngModel)]="todo.nombre" name="nombre" placeholder="Nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input color="success" [(ngModel)]="todo.direccion" name="direccion" placeholder="Dirección"></ion-input>
+    </ion-item>
+ 
+    <ion-item>
+      <ion-label color="success" position="floating">Género </ion-label>
+      <ion-select name="genero" [(ngModel)]="todo.genero" color="success" placeholder="Seleccione">
+        <ion-select-option value="f">Femenino</ion-select-option>
+        <ion-select-option value="m">Masculino</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-input color="success" [(ngModel)]="todo.alias" name="alias" placeholder="Alias"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input color="success" type="date" [(ngModel)]="todo.fecha_nac" name="fecha_nac" placeholder="Fecha Nacimiento"></ion-input>
+    </ion-item>
+    
+  <ion-item>
+    <ion-input type="email" color="success" [(ngModel)]="todo.correo" name="correo" placeholder="Correo"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input color="success" [(ngModel)]="todo.confirm_correo" name="confirm_correo" placeholder="Correo"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input color="success" [(ngModel)]="todo.contrasenia" name="cantrasenia" placeholder="Contraseña"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input color="success" [(ngModel)]="todo.confirm_contrasenia" name="confirm_contrasenia" placeholder="Confirmar Contraseña"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input color="success" [(ngModel)]="todo.userFacebook" name="userFacebook" placeholder="Facebook"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input color="success" [(ngModel)]="todo.userTwitter" name="userTwitter" placeholder="Twitter"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input color="success" [(ngModel)]="todo.userInstagram" name="userInstagram" placeholder="Instagram"></ion-input>
+  </ion-item>
   
-    </ion-toolbar>
+  <ion-button expand="block" type="submit" color="success">Guardar</ion-button>  
+</form>
+
+
+  <ion-toolbar >
+    <ion-buttons slot="start">
+      <ion-button color="success" [routerLink]="['/login']">Ingresar</ion-button>
+    </ion-buttons>
+    <ion-buttons color="success" slot="end">
+      <ion-button color="success" [routerLink]="['/adduser']">Registrarse</ion-button>
+    </ion-buttons>  
+  </ion-toolbar>
+
 </ion-content>

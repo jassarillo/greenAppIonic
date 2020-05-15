@@ -34,7 +34,7 @@ export class LoginPage implements OnInit {
         this.router.navigate(['/eventos']);  
     } else {
        alert("usuario/contraseña invalido");
-    }
+    } 
       
       //this.thedata = data;
 
