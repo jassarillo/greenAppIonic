@@ -36,6 +36,7 @@ export class ProductosService {
   getFavorites() {
     return new Promise(resolve => {
         this.http.get('https://capa75.com.mx/dispensario.php/api/getFavorits').subscribe(data => {
+          
            resolve(data);
            //console.log(data);
            
