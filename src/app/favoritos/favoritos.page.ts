@@ -19,15 +19,15 @@ export class FavoritosPage implements OnInit {
 
   ngOnInit() {
    
-   //this.leerFavoritos();
-   this.readFavorits();
+   this.leerFavoritos();
+   //this.readFavorits();
     
   }
-
+/*
   private readFavorits(){
    const url = this.rocketsApi  + 'launch/next/5';
    this.nextLaunches$ = this.httpClient.get<any>(url);
-  }
+  }*/
 
   leerFavoritos()
   { 

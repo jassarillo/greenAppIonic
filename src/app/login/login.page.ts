@@ -31,6 +31,7 @@ export class LoginPage implements OnInit {
     .then(data => {
 
       if (data == '1') {
+        //alert('gordo feo');
         this.router.navigate(['/eventos']);  
     } else {
        alert("usuario/contraseña invalido");
