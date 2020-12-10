@@ -21,7 +21,7 @@ export class UsersService {
 
 
 return new Promise(resolve => {
-    this.http.post("https://capa75.com.mx/dispensario.php/api/storeUser", postData).subscribe(data => {
+    this.http.post("https://newcms.dispensariomexico.com/index.php/api/storeUser", postData).subscribe(data => {
        resolve(data);
     }, err =>{
         console.log(err);
